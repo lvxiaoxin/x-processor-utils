@@ -10,7 +10,9 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.xReverse"
+		"onCommand:extension.xReverse",
+		"onCommand:extension.xToLowerCase",
+		"onCommand:extension.xToUpperCase"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -18,6 +20,16 @@
 			{
 				"command": "extension.xReverse",
 				"title": "xReverse",
+				"category": "xProcessor"
+			},
+			{
+				"command": "extension.xToLowerCase",
+				"title": "xToLowerCase",
+				"category": "xProcessor"
+			},
+			{
+				"command": "extension.xToUpperCase",
+				"title": "xToUpperCase",
 				"category": "xProcessor"
 			}
 		]
