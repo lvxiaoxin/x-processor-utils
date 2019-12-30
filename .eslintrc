@@ -18,6 +18,8 @@
         "semi":"error",
         "semi-style": ["error", "last"],
         "quotes": [2, "single"],
+        "prefer-const": "off",
+        "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-empty-function": "off"
     }
 }

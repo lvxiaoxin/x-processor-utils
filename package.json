@@ -12,7 +12,8 @@
 	"activationEvents": [
 		"onCommand:extension.xReverse",
 		"onCommand:extension.xToLowerCase",
-		"onCommand:extension.xToUpperCase"
+		"onCommand:extension.xToUpperCase",
+		"onCommand:extension.xAddCommaInLinesEnding"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -30,6 +31,11 @@
 			{
 				"command": "extension.xToUpperCase",
 				"title": "xToUpperCase",
+				"category": "xProcessor"
+			},
+			{
+				"command": "extension.xAddCommaInLinesEnding",
+				"title": "xAddCommaInLinesEnding",
 				"category": "xProcessor"
 			}
 		]
