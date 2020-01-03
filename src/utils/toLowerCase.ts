@@ -1,7 +1,5 @@
-'use strict';
-
 import * as vscode from 'vscode';
-import { xToLowerCase } from '../utilsName';
+import { xToLowerCase } from '../clientStrings';
 
 export const toLowerCaseDisposable: vscode.Disposable = vscode.commands.registerCommand(xToLowerCase, () => {
     const editor: vscode.TextEditor | undefined = vscode.window.activeTextEditor;

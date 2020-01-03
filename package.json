@@ -1,64 +1,66 @@
 {
-	"name": "x-processor-utils",
-	"displayName": "xProcessor",
-	"description": "A document content processor extension for VS Code.",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.41.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.xReverse",
-		"onCommand:extension.xToLowerCase",
-		"onCommand:extension.xToUpperCase",
-		"onCommand:extension.xAddCommaInLinesEnding"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.xReverse",
-				"title": "xReverse",
-				"category": "xProcessor"
-			},
-			{
-				"command": "extension.xToLowerCase",
-				"title": "xToLowerCase",
-				"category": "xProcessor"
-			},
-			{
-				"command": "extension.xToUpperCase",
-				"title": "xToUpperCase",
-				"category": "xProcessor"
-			},
-			{
-				"command": "extension.xAddCommaInLinesEnding",
-				"title": "xAddCommaInLinesEnding",
-				"category": "xProcessor"
-			}
-		]
-	},
-	"scripts": {
-		"eslint": "eslint --ext ts,tsx src/*.ts",
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.7",
-		"@types/node": "^12.11.7",
-		"@types/vscode": "^1.41.0",
-		"@typescript-eslint/eslint-plugin": "^2.13.0",
-		"@typescript-eslint/parser": "^2.13.0",
-		"eslint": "^6.8.0",
-		"glob": "^7.1.5",
-		"mocha": "^6.2.2",
-		"typescript": "^3.7.4",
-		"vscode-test": "^1.2.2"
-	}
+  "name": "x-processor-utils",
+  "displayName": "xProcessor",
+  "description": "A document content processor extension for VS Code.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.xReverse",
+    "onCommand:extension.xToLowerCase",
+    "onCommand:extension.xToUpperCase",
+    "onCommand:extension.xAddInLinesEnding"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.xReverse",
+        "title": "xReverse",
+        "category": "xProcessor"
+      },
+      {
+        "command": "extension.xToLowerCase",
+        "title": "xToLowerCase",
+        "category": "xProcessor"
+      },
+      {
+        "command": "extension.xToUpperCase",
+        "title": "xToUpperCase",
+        "category": "xProcessor"
+      },
+      {
+        "command": "extension.xAddInLinesEnding",
+        "title": "xAddInLinesEnding",
+        "category": "xProcessor"
+      }
+    ]
+  },
+  "scripts": {
+    "eslint": "eslint --ext ts,tsx src/*.ts",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/lodash": "^4.14.149",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.41.0",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "eslint": "^6.8.0",
+    "glob": "^7.1.5",
+    "mocha": "^6.2.2",
+    "typescript": "^3.7.4",
+    "vscode-test": "^1.2.2"
+  },
+  "dependencies": {}
 }

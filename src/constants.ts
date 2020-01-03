@@ -1,5 +1,3 @@
-'use strict';
-
 // version number
 export const version = '0.0.1';
 

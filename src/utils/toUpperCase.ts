@@ -1,7 +1,5 @@
-'use strict';
-
 import * as vscode from 'vscode';
-import { xToUpperCase } from '../utilsName';
+import { xToUpperCase } from '../clientStrings';
 
 export const toUpperCaseDisposable: vscode.Disposable = vscode.commands.registerCommand(xToUpperCase, () => {
     const editor: vscode.TextEditor | undefined = vscode.window.activeTextEditor;

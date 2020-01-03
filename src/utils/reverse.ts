@@ -1,7 +1,5 @@
-'use strict';
-
 import * as vscode from 'vscode';
-import { xReverse } from '../utilsName';
+import { xReverse } from '../clientStrings';
 
 export const reverseDisposable: vscode.Disposable = vscode.commands.registerCommand(xReverse, ()=> {
     const editor: vscode.TextEditor | undefined = vscode.window.activeTextEditor;

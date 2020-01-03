@@ -11,11 +11,11 @@ x-processor-utils is a simple VS Code extension, which collects a set of useful 
 
 - **Make Uppercase/Lowercase selected document**
  <i>xProcessor: xToUpperCase / xProcessor: xToLowerCase </i>
-![Reverse the selected document](images/caseDemo.gif)
+![Make Uppercase/Lowercase selected document](images/caseDemo.gif)
 
-- **Add comma in the ending of every selected lines**
- <i>xProcessor: xAddCommaInLinesEnding</i>
-![Reverse the selected document](images/addComma.gif)
+- **Add anything in the ending of every selected lines**
+ <i>xProcessor: xAddInLinesEnding</i>
+![Add comma in the ending of every selected lines](images/addComma.gif)
 
 
 ## Requirements
@@ -33,4 +33,5 @@ x-processor-utils is a simple VS Code extension, which collects a set of useful 
 Initial release of basic feature, including: 
 - reverse
 - to upper/lower case
-- add comma in lines ending
+- add anything in lines ending
+

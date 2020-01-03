@@ -1,12 +1,10 @@
-'use strict';
-
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { reverseDisposable } from './utils/reverse';
 import { toLowerCaseDisposable } from './utils/toLowerCase';
 import { toUpperCaseDisposable } from './utils/toUpperCase';
-import { addCommaInLinesEndingDisposable } from './utils/addCommaInLines';
+import { addInLinesEndingDisposable } from './utils/addInLinesEnding';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -21,8 +19,8 @@ export function activate(context: vscode.ExtensionContext): void {
 	// x cmd: xToUpperCase --> To uppercase the selections.
 	context.subscriptions.push(toLowerCaseDisposable);
 
-	// x cmd: xAddCommaInLinesEnding --> To add comma in the ending of every lines.
-	context.subscriptions.push(addCommaInLinesEndingDisposable);
+	// x cmd: xAddInLinesEnding --> To add anything in the ending of every lines.
+	context.subscriptions.push(addInLinesEndingDisposable);
 }
 
 // this method is called when your extension is deactivated
