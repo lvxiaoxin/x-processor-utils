@@ -2,6 +2,8 @@
   "name": "x-processor-utils",
   "displayName": "xProcessor",
   "description": "A document content processor extension for VS Code.",
+  "publisher": "lvxiaoxin",
+  "repository": "https://github.com/lvxiaoxin/x-processor-utils.git",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.41.0"
