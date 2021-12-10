@@ -1,14 +1,14 @@
 // the cmd name for string reverse
-export const xReverse = 'extension.xReverse';
+export const xReverse = 'extension.reverse';
 
 // the cmd name for string to lowercase
-export const xToLowerCase = 'extension.xToLowerCase';
+export const xToLowerCase = 'extension.toLowerCase';
 
 // the cmd name for string to Uppercase 
-export const xToUpperCase = 'extension.xToUpperCase';
+export const xToUpperCase = 'extension.toUpperCase';
 
 // the cmd name for adding characters in the end of every selected lines.
-export const xAddInLinesEnding = 'extension.xAddInLinesEnding';
+export const xAddInLinesEnding = 'extension.addToEnd';
 
 // the error message used for inform.
 export const errorMessage = 'Sorry, here is an error occured when trying to run ';

@@ -1,44 +1,44 @@
 {
-  "name": "x-processor-utils",
-  "displayName": "xProcessor",
-  "description": "A document content processor extension for VS Code.",
+  "name": "easyedit",
+  "displayName": "Easy edit",
+  "description": "A tool to handle specific hard-writing work.",
   "publisher": "lvxiaoxin",
   "repository": "https://github.com/lvxiaoxin/x-processor-utils.git",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.41.0"
+    "vscode": "^1.51.0"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.xReverse",
-    "onCommand:extension.xToLowerCase",
-    "onCommand:extension.xToUpperCase",
-    "onCommand:extension.xAddInLinesEnding"
+    "onCommand:extension.reverse",
+    "onCommand:extension.toLowerCase",
+    "onCommand:extension.toUpperCase",
+    "onCommand:extension.addToEnd"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.xReverse",
-        "title": "xReverse",
-        "category": "xProcessor"
+        "command": "extension.reverse",
+        "title": "Reverse",
+        "category": "easyEdit"
       },
       {
-        "command": "extension.xToLowerCase",
-        "title": "xToLowerCase",
-        "category": "xProcessor"
+        "command": "extension.toLowerCase",
+        "title": "To lower case",
+        "category": "easyEdit"
       },
       {
-        "command": "extension.xToUpperCase",
-        "title": "xToUpperCase",
-        "category": "xProcessor"
+        "command": "extension.toUpperCase",
+        "title": "To upper case",
+        "category": "easyEdit"
       },
       {
-        "command": "extension.xAddInLinesEnding",
-        "title": "xAddInLinesEnding",
-        "category": "xProcessor"
+        "command": "extension.addToEnd",
+        "title": "Add content to the end of lines",
+        "category": "easyEdit"
       }
     ]
   },
@@ -63,5 +63,8 @@
     "mocha": "^9.1.3",
     "typescript": "^3.7.4",
     "vscode-test": "^1.2.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
